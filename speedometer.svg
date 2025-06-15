@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="500" height="400">
+  <!-- Speedometer Background -->
+  <circle cx="250" cy="250" r="150" fill="#f8fafc" stroke="#e2e8f0" stroke-width="10"/>
+  
+  <!-- Speed Markers -->
+  <g stroke="#94a3b8" stroke-width="2">
+    <!-- 0 Mbps -->
+    <line x1="250" y1="250" x2="250" y2="120" transform="rotate(210 250 250)" />
+    <text x="154" y="325" fill="#64748b" font-family="Arial" font-size="14" text-anchor="middle">0</text>
+    
+    <!-- 100 Mbps -->
+    <line x1="250" y1="250" x2="250" y2="120" transform="rotate(240 250 250)" />
+    <text x="175" y="360" fill="#64748b" font-family="Arial" font-size="14" text-anchor="middle">100</text>
+    
+    <!-- 200 Mbps -->
+    <line x1="250" y1="250" x2="250" y2="120" transform="rotate(270 250 250)" />
+    <text x="250" y="375" fill="#64748b" font-family="Arial" font-size="14" text-anchor="middle">200</text>
+    
+    <!-- 300 Mbps -->
+    <line x1="250" y1="250" x2="250" y2="120" transform="rotate(300 250 250)" />
+    <text x="325" y="360" fill="#64748b" font-family="Arial" font-size="14" text-anchor="middle">300</text>
+    
+    <!-- 400 Mbps -->
+    <line x1="250" y1="250" x2="250" y2="120" transform="rotate(330 250 250)" />
+    <text x="346" y="325" fill="#64748b" font-family="Arial" font-size="14" text-anchor="middle">400</text>
+    
+    <!-- 500 Mbps -->
+    <line x1="250" y1="250" x2="250" y2="120" transform="rotate(360 250 250)" />
+    <text x="350" y="250" fill="#64748b" font-family="Arial" font-size="14" text-anchor="middle">500</text>
+    
+    <!-- 600 Mbps -->
+    <line x1="250" y1="250" x2="250" y2="120" transform="rotate(30 250 250)" />
+    <text x="325" y="175" fill="#64748b" font-family="Arial" font-size="14" text-anchor="middle">600</text>
+  </g>
+  
+  <!-- Speedometer Needle -->
+  <g>
+    <line x1="250" y1="250" x2="250" y2="130" stroke="#3b82f6" stroke-width="4" transform="rotate(270 250 250)">
+      <animateTransform 
+        attributeName="transform"
+        type="rotate"
+        from="210 250 250"
+        to="30 250 250"
+        dur="3s"
+        repeatCount="1"
+        fill="freeze"
+      />
+    </line>
+    <circle cx="250" cy="250" r="15" fill="#3b82f6" />
+    <circle cx="250" cy="250" r="5" fill="white" />
+  </g>
+  
+  <!-- Speed Value -->
+  <text x="250" y="300" fill="#1e40af" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle">200 Mbps</text>
+  <text x="250" y="330" fill="#64748b" font-family="Arial" font-size="16" text-anchor="middle">Download Speed</text>
+  
+  <!-- Decorative Elements -->
+  <g opacity="0.7">
+    <circle cx="150" cy="100" r="30" fill="#bfdbfe" />
+    <circle cx="350" cy="80" r="20" fill="#ddd6fe" />
+    <circle cx="380" cy="150" r="25" fill="#c7d2fe" />
+  </g>
+</svg>
